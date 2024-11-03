@@ -1,11 +1,23 @@
 import Home from './Home/Home';
+import Navbar from './Navbar/Navbar';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { StoreProvider } from './StoreContext';
 
 const  App = () => {
   return (
-    <div className="App">
-      <Home></Home>
-    </div>
+    <StoreProvider>
+      <Router>
+        <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+      </Router>
+    </StoreProvider>
   );
 }
 

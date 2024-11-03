@@ -1,3 +1,25 @@
-.app{
-    display: block;
+@use "../colors";
+@import "../page-body";
+
+a {
+    text-decoration: none;
+}
+
+.home{
+    @include page-body();
+
+    &_journal-container{
+        grid-area: body;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 50px;
+        min-height: 1000px;
+    }
+    &_header{
+        font-size: 36px;
+        color: colors.$font-color;
+        align-self: center;
+    }
 }
