@@ -1,6 +1,6 @@
 .navbar {
   height: 50px;
-  background-color: #0B0C10;
+  background-color: #000000;
   display: grid;
   justify-content: space-between;
 }
@@ -15,5 +15,5 @@
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #C5C6C7;
+  color: #ffffff;
 }

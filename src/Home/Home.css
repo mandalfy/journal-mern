@@ -7,7 +7,7 @@ a {
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.1fr;
   grid-template-areas: ". body .";
-  background-color: #1F2833;
+  background-color: #00295a;
 }
 @media screen and (max-width: 900px) {
   .home {
@@ -26,6 +26,6 @@ a {
 }
 .home_header {
   font-size: 36px;
-  color: #C5C6C7;
+  color: #ffffff;
   align-self: center;
 }
