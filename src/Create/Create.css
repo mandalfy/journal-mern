@@ -1,0 +1,63 @@
+.button {
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer;
+  margin: 0px 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.text-background {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.create {
+  height: max-content;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-areas: ". body .";
+  background-color: #00295a;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0 10%;
+}
+@media screen and (max-width: 900px) {
+  .create {
+    grid-template-columns: 1fr;
+    grid-template-areas: "body";
+  }
+}
+.create_fields {
+  grid-area: body;
+  display: grid;
+  grid-template-rows: 0.05fr 0.05fr 0.05fr 0.95fr;
+}
+@media screen and (max-width: 800px) {
+  .create {
+    margin: 10px 20px;
+  }
+}
+.create .tags {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 10px 0 20px 0;
+}
+.create input {
+  height: 30px;
+}
+.create label {
+  color: #45A29E;
+  font-size: 16px;
+  font-weight: bold;
+}
+.create .journalEntry {
+  height: 600px;
+  font-size: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.create_label {
+  margin-bottom: 20px;
+}

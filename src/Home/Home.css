@@ -24,6 +24,12 @@ a {
   gap: 50px;
   min-height: 1000px;
 }
+.home_journal-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 350px));
+}
 .home_header {
   font-size: 36px;
   color: #ffffff;

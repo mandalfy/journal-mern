@@ -1,0 +1,9 @@
+.journal-entry {
+  padding: 15px;
+  color: #ffffff;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: minmax(100px, 300px);
+  grid-template-rows: 50px 24px 100px min-content;
+  gap: 15px;
+}

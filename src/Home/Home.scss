@@ -8,7 +8,8 @@ a {
 .home{
     @include page-body();
 
-    &_journal-container{
+    &_journal{
+        &-container{
         grid-area: body;
         margin-top: 30px;
         display: flex;
@@ -17,6 +18,15 @@ a {
         gap: 50px;
         min-height: 1000px;
     }
+
+    &-list{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+        grid-template-rows: repeat(auto-fit, minmax(250px, 350px));
+    }
+}
+
     &_header{
         font-size: 36px;
         color: colors.$font-color;
