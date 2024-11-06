@@ -1,3 +1,4 @@
+//journal-mern/src/App.js
 import Home from './Home/Home';
 import Navbar from './Navbar/Navbar';
 import './App.css';
